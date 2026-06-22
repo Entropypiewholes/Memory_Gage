@@ -1,0 +1,16 @@
+# ufbt / Flipper build artifacts
+.ufbt/
+dist/
+build/
+*.fap
+*.pyc
+__pycache__/
+*.o
+*.elf
+*.bin
+*.map
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

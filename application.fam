@@ -1,0 +1,20 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="digimon_memory",
+    name="Digimon Memory",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="digimon_memory_app",
+    stack_size=2 * 1024,
+    fap_category="Tools",
+    # Optional values
+    fap_version="1.1",
+    fap_description="Track the Digimon TCG shared memory gauge (-10 to +10)",
+    # fap_icon and assets omitted for v1 (no binary icon file); add later with a 10x10 1-bit PNG
+     fap_icon="digimon_memory_10px.png",
+     fap_icon_assets="images",
+    fap_author="Custom",
+    requires=[
+        "gui",
+    ],
+)
