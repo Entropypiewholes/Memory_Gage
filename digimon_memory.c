@@ -197,11 +197,11 @@ static bool digimon_memory_input_callback(InputEvent* event, void* context) {
             } else if(event->key == InputKeyLeft) {
                 if(model->memory != -3) {
                     model->memory = -3;
-                    beep(675.0f, 50.0f, 0.6f);
+                    beep(650.0f, 50.0f, 0.6f);
                 }
                 consumed = true;
             
-            if(model->memory != before) {
+            }if(model->memory != before) {
                 save_memory(app->storage, model->memory);
             }
         },
